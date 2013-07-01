@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Media Writing</title>
+<link rel="stylesheet" href="master_orange.css">
+
+<script src="d3.v2.min.js"></script>
+<script src="barcharts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+
+<body>
+<h2 font-family:"gill sans MT"> Number of Occurrences in Media Writing by Subject</h2>
+<figure id="myChart" style='height:500px'; 'width:800px'></figure>
+
+<script>
+var tt = document.createElement('div'),
+  leftOffset = -(~~$('html').css('padding-left').replace('px', '') + ~~$('body').css('margin-left').replace('px', '')),
+  topOffset = -32;
+tt.className = 'tooltip';
+document.body.appendChild(tt);
+
+var data = {
+      "main": [
+        {
+          "label": "Foo",
+          "data": [
+            	
+			{
+              "x": "African Americans",
+              "y": 1229
+            },			
+			{
+              "x": "Area Planning & Development",
+              "y": 362
+            },					
+			{
+              "x": "Arab Americans",
+              "y": 227
+            },            			
+			{
+              "x": "Automobile Industry",
+              "y": 1620
+            },
+			{
+              "x": "Bankruptcy",
+              "y": 257
+            },			
+			{
+              "x": "Business Community",
+              "y": 342
+            },
+			{
+              "x": "Children & Youth",
+              "y": 779
+            },			
+			{
+              "x": "Cities",
+              "y": 2264
+            },			
+			{
+              "x": "Civil Rights",
+              "y": 270
+            },		
+			{
+              "x": "Colleges & Universities",
+              "y": 708
+            },			
+			{
+              "x": "Community Development",
+              "y": 352
+            },		
+			{
+              "x": "Criminal Investigations",
+              "y": 360
+            },			
+			{
+              "x": "Demonstrations & Protests",
+              "y": 323
+            },			
+			{
+              "x": "Economic Development",
+              "y": 442
+            },			
+			{
+              "x": "Education",
+              "y": 597
+            },
+			{
+              "x": "Education Reform",
+              "y": 223
+            },
+			{
+              "x": "Homeless People",
+              "y": 224
+            },	
+			{
+              "x": "Labor Unions",
+              "y": 277
+            },	
+			{
+              "x": "Mayors",
+              "y": 1349
+            },					
+			{
+              "x": "Minority & Ethnic groups",
+              "y": 317
+            },			
+			{
+              "x": "Murders & Murder Attempts",
+              "y": 479
+            },			
+			{
+              "x": "Music",
+              "y": 251
+            },			
+			{
+              "x": "Neighborhoods",
+              "y": 492
+            },			
+			{
+              "x": "Parks & Recreation Areas",
+              "y": 224
+            },			
+			{
+              "x": "Police",
+              "y": 281
+            },			
+			{
+              "x": "Politics",
+              "y": 461
+            },			
+			{
+              "x": "Professional Baseball",
+              "y": 1215
+            },			
+			{
+              "x": "Professional Basketball",
+              "y": 606
+            },			
+			{
+              "x": "Professional Football",
+              "y": 747
+            },			
+			{
+              "x": "Professional Hockey",
+              "y": 558
+            },			
+			{
+              "x": "Public Schools",
+              "y": 1063
+            },			
+			{
+              "x": "Women",
+              "y": 354
+            },			
+          ],
+          "className": ".foo"
+        }
+      ],
+      "xScale": "ordinal",
+      "yScale": "linear",
+      
+    };
+   var opts = {
+  "mouseover": function (d, i) {
+    var pos = $(this).offset();
+    $(tt).text(d.x + ': ' + d.y)
+      .css({top: topOffset + pos.top, left: pos.left + leftOffset})
+      .show();
+  },
+  "mouseout": function (x) {
+    $(tt).hide();
+  }
+  };
+   var MyChart = new xChart('bar', data, '#myChart', opts);
+  </script>
+
+  
+  
+  
+
+</body>
+</html>
+

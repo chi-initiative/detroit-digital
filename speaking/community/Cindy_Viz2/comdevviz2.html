@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Community Development Organization Subjects</title>
+	<link rel="stylesheet" href="master_music.css">
+
+	<script src="d3.v2.min.js"></script>
+	<script src="xcharts.js"></script>
+
+</head>
+
+<body>
+
+<figure  id="myChart" style='height:500px'; 'width:500px' ></figure>
+
+<script>
+
+var data = {  
+      "main": [
+        {
+          "label": "1950-1960",
+          "data": [
+            {
+              "x": "Urban Planning",
+              "y": 1
+            },
+            {
+              "x": "Infrastructure",
+              "y": 2
+            },
+            {
+              "x": "Education & Community Outreach",
+              "y": 0
+            },
+            {
+              "x": "Community Health",
+              "y": 0
+            },
+          	{
+              "x": "Sustainability",
+              "y": 0
+            },
+            {
+              "x": "Livelihood",
+              "y": 0
+            },
+          ],
+          "className": ".19501960"
+        },
+		{
+          "label": "1961-1970",
+          "data": [
+              {
+              "x": "Urban Planning",
+              "y": 2
+            },
+            {
+              "x": "Infrastructure",
+              "y": 1
+            },
+            {
+              "x": "Education & Community Outreach",
+              "y": 2
+            },
+            {
+              "x": "Community Health",
+              "y": 3
+            },
+          	{
+              "x": "Sustainability",
+              "y": 3
+            },
+            {
+              "x": "Livelihood",
+              "y": 2
+            },
+          	"className": ".comp.19611970",
+		},
+				{
+          "label": "1971-1980",
+          "data": [
+              {
+              "x": "Urban Planning",
+              "y": 10
+            },
+            {
+              "x": "Infrastructure",
+              "y": 2
+            },
+            {
+              "x": "Education & Community Outreach",
+              "y": 1
+            },
+            {
+              "x": "Community Health",
+              "y": 3
+            },
+          	{
+              "x": "Sustainability",
+              "y": 3
+            },
+            {
+              "x": "Livelihood",
+              "y": 1
+            },
+            ],
+          	"className": ".comp.1971-1980",
+		},
+		],
+      		{
+          "label": "1981-1990",
+          "data": [
+              {
+              "x": "Urban Planning",
+              "y": 7
+            },
+            {
+              "x": "Infrastructure",
+              "y": 1
+            },
+            {
+              "x": "Education & Community Outreach",
+              "y": 2
+            },
+            {
+              "x": "Community Health",
+              "y": 3
+            },
+          	{
+              "x": "Sustainability",
+              "y": 9
+            },
+            {
+              "x": "Livelihood",
+              "y": 6
+            },
+          	"className": ".comp.1981-1990",
+		},
+			},
+          ]
+          		{
+          "label": "1991-2000",
+          "data": [
+              {
+              "x": "Urban Planning",
+              "y": 15
+            },
+            {
+              "x": "Infrastructure",
+              "y": 12
+            },
+            {
+              "x": "Education & Community Outreach",
+              "y": 5
+            },
+            {
+              "x": "Community Health",
+              "y": 3
+            },
+          	{
+              "x": "Sustainability",
+              "y": 6
+            },
+            {
+              "x": "Livelihood",
+              "y": 11
+            },
+          	"className": ".comp.1991-2000",
+		},
+        },
+      ]
+		{
+          "label": "2001-2013",
+          "data": [
+              {
+              "x": "Urban Planning",
+              "y": 15
+            },
+            {
+              "x": "Infrastructure",
+              "y": 18
+            },
+            {
+              "x": "Education & Community Outreach",
+              "y": 10
+            },
+            {
+              "x": "Community Health",
+              "y": 1
+            },
+          	{
+              "x": "Sustainability",
+              "y": 17
+            },
+            {
+              "x": "Livelihood",
+              "y": 9
+            },
+          	"className": ".comp.2001-2013",
+		},
+		],
+      "xScale": "ordinal",
+      "yScale": "linear",
+      },
+  chart = new xChart('bar', data, '#myChart');
+  </script>
+</body>
+</html>

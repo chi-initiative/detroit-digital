@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Community Development Organization Subjects</title>
+	<link rel="stylesheet" href="master_yellow.css">
+
+	<script src="d3.v2.min.js"></script>
+	<script src="barcharts.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+<figure  id="myChart" style='height:500px'; 'width=5000px'; ></figure>
+
+<script>
+
+var tt = document.createElement('div'),
+  leftOffset = -(~~$('html').css('padding-left').replace('px', '') + ~~$('body').css('margin-left').replace('px', '')),
+  topOffset = -32;
+tt.className = 'tooltip';
+document.body.appendChild(tt);
+
+var data = {
+      "xScale": "ordinal",
+      "yScale": "linear",
+      
+      "main": [
+        {
+          "label": "Urban Planning",
+          "data": [
+            {
+              "x": "Beautification",
+              "y": 37
+            },
+            			{
+              "x": "Housing",
+              "y": 36
+            },
+    	{
+              "x": "Public Safety",
+              "y": 13
+            },
+        		{
+              "x": "Transportation",
+              "y": 6
+            },      
+            ],
+        "className": ".urbanplanning"            
+             {
+          "label": "financial & legal",
+          "data": [
+			{
+              "x": "Business",
+              "y": 29
+
+            },
+			{
+              "x": "City Services",
+              "y": 12
+            },
+			{
+              "x": "Legal Assistance",
+              "y": 3
+            },
+			
+            {
+              "x": "Investment",
+              "y": 16
+            },
+                 
+            ],
+        "className": ".comp.financiallegal"   
+             },      
+            ],          
+             {
+          "label": "Education & Outreach",
+          "data": [
+			 
+			{
+              "x": "Education",
+              "y": 35
+            },
+		
+			{
+              "x": "Civic Engagement",
+              "y": 7
+            },
+          
+                 
+            ],
+        "className": ".comp.education"   
+           
+			   },      
+            ],          
+             {
+          "label": "Sustainability",
+          "data": [
+			{
+              "x": "Environmental Justice",
+              "y": 17
+            },
+				{
+              "x": "Sustainability",
+              "y": 32
+            },
+		
+			
+			{
+              "x": "Urban Farming",
+              "y": 19
+            },
+		],
+		"classname": ".comp.sustainability",
+			   },      
+            ],          
+             {
+          "label": "Community Health",
+          "data": [
+			
+			{
+              "x": "Health",
+              "y": 7
+            },
+			
+			{
+              "x": "Homelessness",
+              "y": 6
+            },
+		
+			{
+              "x": "Rehabilitation",
+              "y": 6
+            },
+					],
+			"classname": ".comp.communityhealth",
+				 },      
+            ],          
+             {
+          "label": "Livelihood",
+          "data": [
+				{
+              "x": "Food",
+              "y": 17
+            },
+			
+			{
+              "x": "Job & Life Skills",
+              "y": 13
+            },
+			{
+              "x": "Seniors",
+              "y": 2
+              
+              	{
+              "x": "Families",
+              "y": 3
+            },
+			
+			{
+              "x": "Youth",
+              "y": 21
+            },
+          ],
+			"classname": ".comp.livelihood",
+				 },  
+      ],
+
+    var opts = {
+  "mouseover": function (d, i) {
+    var pos = $(this).offset();
+    $(tt).text(d.x + ': ' + d.y + ' Occurrences')
+      .css({top: topOffset + pos.top, left: pos.left + leftOffset})
+      .show();
+  },
+  "mouseout": function (x) {
+    $(tt).hide();
+  }
+  };
+   var MyChart = new xChart('line', data, '#myChart', opts);
+  </script>
+</body>
+</html>

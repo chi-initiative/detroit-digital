@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Academic Writing on Detroit</title>
+	<link rel="stylesheet" href="master.css">
+	<script src="d3.v2.min.js"></script>
+	<script src="barcharts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+<figure id="myChart" style="height:500px" ></figure>
+
+<script>
+var tt = document.createElement('div')
+leftOffset = -(~~$('html').css('padding-left').replace('px', '') + ~~$('body').css('margin-left').replace('px', '')),
+  topOffset = -32;
+	tt.className = "tooltip"
+	document.body.appendChild(tt);
+var data = {
+	"main": [
+        {
+          "label": "Academic Writing on Detroit by Theme",
+          "data": [
+			{
+              "x": "Whites",
+              "y": 64
+            },            
+			{
+              "x": "Neighborhoods",
+              "y": 59
+            },
+            {
+              "x": "Race Relations",
+              "y": 56
+            },
+			{
+              "x": "Racism",
+              "y": 51
+            },
+			{
+              "x": "Pollution",
+              "y": 49
+            },
+			{
+              "x": "Politics",
+              "y": 44
+            },
+			{
+              "x": "Urban Development",
+              "y": 44
+            },
+			{
+              "x": "Automobiles",
+              "y": 43
+            },
+			{
+              "x": "Fairs and Shows",
+              "y": 42
+            },
+			{
+              "x": "Women",
+              "y": 37
+            },
+			{
+              "x": "Eldery",
+              "y": 36
+            },	
+			{
+              "x": "Poverty",
+              "y": 32
+            },
+
+			{
+              "x": "Hispanic Americans",
+              "y": 30
+            },
+			{
+              "x": "Residential Segregation",
+              "y": 30
+            },	
+			{
+              "x": "Riots",
+              "y": 28
+            },	
+	
+        "className": ".academic"
+        },
+            {
+          "label": "Arab Americans",
+          "data": [
+      	{
+              "x": "Arab Americans",
+              "y": 23
+            },	   
+          ],
+          "className": ".comp.arabamericans"
+          }, {
+          "label": "Automobile Industry",
+          "data": [
+            {
+              "x": "Automobile Industry",
+              "y": 54
+            },
+          ],
+          "className": ".comp.automobileindustry"
+          },
+          {
+          "label": "Black Americans",
+          "data": [
+            {
+              "x": "Black Americans",
+              "y": 136
+            },			            
+          ],
+          "className": ".comp.blackamericans"
+          },
+          {
+          "label": "Children",
+          "data": [
+            {
+              "x": "Children",
+              "y": 27
+            },			            
+          ],
+          "className": ".comp.children"
+          },
+          {
+          "label": "Cities",
+          "data": [
+            {
+              "x": "Cities",
+              "y": 131
+            },			            
+          ],
+          "className": ".comp.cites"
+          },
+          {
+          "label": "Community Development",
+          "data": [
+            {
+              "x": "Community Development",
+              "y": 24
+            },			            
+          ],
+          "className": ".comp.communitydevelopment"
+          },
+          {
+          "label": "Economic Development",
+          "data": [
+            	{
+              "x": "Economic Development",
+              "y": 27
+            },				            
+          ],
+          "className": ".comp.economicdevelopment"
+          },
+          {
+          "label": "Mayors",
+          "data": [
+            {
+              "x": "Mayors",
+              "y": 23
+            },
+			            
+          ],
+          "className": ".comp.mayors"
+          },
+          {
+          "label": "Minority & Ethnic Groups",
+          "data": [
+            	{
+              "x": "Minority & Ethnic Groups",
+              "y": 31
+            },			            
+          ],
+          "className": ".comp.minorityethnic"
+          },
+          "label": "Music",
+          "data": [
+          {
+              "x": "Popular Music",
+              "y": 27
+            },
+            {
+              "x": "Music",
+              "y": 251
+            },		
+            ],
+          "className": ".comp.music"
+          },
+      ],
+      "xScale": "ordinal",
+      "yScale": "linear",
+};
+var opts = {
+"mouseover": function (d, i) {
+	var pos = $(this).offset();
+    $(tt).text(d.x + ': ' + d.y)
+	.css({top: topOffset + pos.top, left: pos.left + leftOffset})
+      .show();
+  },
+  "mouseout": function (x) {
+    $(tt).hide();
+  }
+  };
+var MyChart = new xChart('bar', data, '#myChart', opts);
+</script>
+
+</body>
+</html>

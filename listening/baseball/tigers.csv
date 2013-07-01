@@ -1,0 +1,114 @@
+year,league,w,l,finish,playoffs,stadium,attendance,attend_g,rank
+2013,AL Central,38,29,1,,Comerica Park,1155326,36104,4th of 15
+2012,AL Central,88,74,1,1,Comerica Park,3028033,37383,5th of 14
+2011,AL Central,95,67,1,2,Comerica Park,2642045,32618,6th of 14
+2010,AL Central,81,81,3,,Comerica Park,2461237,30386,6th of 14
+2009,AL Central,86,77,2,,Comerica Park,2567165,31693,4th of 14
+2008,AL Central,74,88,5,,Comerica Park,3202645,39539,3rd of 14
+2007,AL Central,88,74,2,,Comerica Park,3047133,37619,3rd of 14
+2006,AL Central,95,67,2,1,Comerica Park,2595937,32049,5th of 14
+2005,AL Central,71,91,4,,Comerica Park,2024431,24993,10th of 14
+2004,AL Central,72,90,4,,Comerica Park,1917004,23667,9th of 14
+2003,AL Central,43,119,5,,Comerica Park,1368245,16892,13th of 14
+2002,AL Central,55,106,5,,Comerica Park,1503623,18795,12th of 14
+2001,AL Central,66,96,4,,Comerica Park,1921305,23720,9th of 14
+2000,AL Central,79,83,3,,Comerica Park,2438617,30106,7th of 14
+1999,AL Central,69,92,3,,Tiger Stadium,2026441,25018,9th of 14
+1998,AL Central,65,97,5,,Tiger Stadium,1409391,17400,11th of 14
+1997,AL East,79,83,3,,Tiger Stadium,1365157,16854,13th of 14
+1996,AL East,53,109,5,,Tiger Stadium,1168610,14427,13th of 14
+1995,AL East,60,84,4,,Tiger Stadium,1180979,16402,11th of 14
+1994,AL East,53,62,5,,Tiger Stadium,1184783,20427,13th of 14
+1993,AL East,85,77,3,,Tiger Stadium,1971421,24339,12th of 14
+1992,AL East,75,87,6,,Tiger Stadium,1423963,17800,13th of 14
+1991,AL East,84,78,2,,Tiger Stadium,1641661,20267,12th of 14
+1990,AL East,79,83,3,,Tiger Stadium,1495785,18466,13th of 14
+1989,AL East,59,103,7,,Tiger Stadium,1543656,19057,11th of 14
+1988,AL East,88,74,2,,Tiger Stadium,2081162,25693,8th of 14
+1987,AL East,98,64,1,2,Tiger Stadium,2061830,25455,7th of 14
+1986,AL East,87,75,3,,Tiger Stadium,1899437,23450,7th of 14
+1985,AL East,84,77,3,,Tiger Stadium,2286609,28230,3rd of 14
+1984,AL East,104,58,1,1,Tiger Stadium,2704794,32985,1st of 14
+1983,AL East,92,70,2,,Tiger Stadium,1829636,22588,8th of 14
+1982,AL East,83,79,4,,Tiger Stadium,1636058,20198,7th of 14
+1981,AL East,60,49,3,,Tiger Stadium,1149144,20894,5th of 14
+1980,AL East,84,78,4,,Tiger Stadium,1785293,21772,7th of 14
+1979,AL East,85,76,5,,Tiger Stadium,1630929,20387,7th of 14
+1978,AL East,86,76,5,,Tiger Stadium,1714893,21172,5th of 14
+1977,AL East,74,88,4,,Tiger Stadium,1359856,16788,7th of 14
+1976,AL East,74,87,5,,Tiger Stadium,1467020,18338,4th of 12
+1975,AL East,57,102,6,,Tiger Stadium,1058836,13235,6th of 12
+1974,AL East,72,90,6,,Tiger Stadium,1243080,15347,3rd of 12
+1973,AL East,85,77,3,,Tiger Stadium,1724146,21286,1st of 12
+1972,AL East,86,70,1,2,Tiger Stadium,1892386,24261,1st of 12
+1971,AL East,91,71,2,,Tiger Stadium,1591073,19643,2nd of 12
+1970,AL East,79,83,4,,Tiger Stadium,1501293,18534,2nd of 12
+1969,AL East,90,72,2,,Tiger Stadium,1577481,19475,2nd of 12
+1968,AL,103,59,1,1,Tiger Stadium,2031847,25085,1st of 10
+1967,AL,91,71,2,,Tiger Stadium,1447143,17648,3rd of 10
+1966,AL,88,74,3,,Tiger Stadium,1124293,13880,5th of 10
+1965,AL,89,73,4,,Tiger Stadium,1029645,12712,4th of 10
+1964,AL,85,77,4,,Tiger Stadium,816139,9953,6th of 10
+1963,AL,79,83,5,,Tiger Stadium,821952,10148,6th of 10
+1962,AL,85,76,4,,Tiger Stadium,1207881,14730,3rd of 10
+1961,AL,101,61,2,,Tiger Stadium,1600710,19521,2nd of 10
+1960,AL,71,83,6,,Briggs Stadium,1167669,15165,4th of 8
+1959,AL,76,78,4,,Briggs Stadium,1221221,15860,4th of 8
+1958,AL,77,77,5,,Briggs Stadium,1098924,14272,2nd of 8
+1957,AL,78,76,4,,Briggs Stadium,1272346,16524,2nd of 8
+1956,AL,82,72,5,,Briggs Stadium,1051182,13477,3rd of 8
+1955,AL,79,75,5,,Briggs Stadium,1181838,15349,5th of 8
+1954,AL,68,86,5,,Briggs Stadium,1079847,14024,4th of 8
+1953,AL,60,94,6,,Briggs Stadium,884658,11198,5th of 8
+1952,AL,50,104,8,,Briggs Stadium,1026846,13336,5th of 8
+1951,AL,73,81,5,,Briggs Stadium,1132641,14710,5th of 8
+1950,AL,95,59,2,,Briggs Stadium,1951474,24092,2nd of 8
+1949,AL,87,67,4,,Briggs Stadium,1821204,23349,3rd of 8
+1948,AL,78,76,5,,Briggs Stadium,1743035,22637,3rd of 8
+1947,AL,85,69,2,,Briggs Stadium,1398093,17476,4th of 8
+1946,AL,92,62,2,,Briggs Stadium,1722590,21805,2nd of 8
+1945,AL,88,65,1,1,Briggs Stadium,1280341,16847,1st of 8
+1944,AL,88,66,2,,Briggs Stadium,923176,11836,1st of 8
+1943,AL,78,76,5,,Briggs Stadium,606287,7773,2nd of 8
+1942,AL,73,81,5,,Briggs Stadium,580087,7534,3rd of 8
+1941,AL,75,79,4,,Briggs Stadium,684915,8895,4th of 8
+1940,AL,90,64,1,1,Briggs Stadium,1112693,14085,1st of 8
+1939,AL,81,73,5,,Briggs Stadium,836279,10722,2nd of 8
+1938,AL,84,70,4,,Briggs Stadium,799557,10121,2nd of 8
+1937,AL,89,65,2,,Navin Field,1072276,13926,1st of 8
+1936,AL,83,71,2,,Navin Field,875948,11376,2nd of 8
+1935,AL,93,58,1,1,Navin Field,1034929,13100,1st of 8
+1934,AL,101,53,1,1,Navin Field,919161,11490,1st of 8
+1933,AL,75,79,5,,Navin Field,320972,4115,5th of 8
+1932,AL,76,75,5,,Navin Field,397157,5092,4th of 8
+1931,AL,61,93,7,,Navin Field,434056,5637,5th of 8
+1930,AL,75,79,5,,Navin Field,649450,8326,3rd of 8
+1929,AL,70,84,6,,Navin Field,869318,11290,2nd of 8
+1928,AL,68,86,6,,Navin Field,474323,6160,4th of 8
+1927,AL,82,71,4,,Navin Field,773716,9919,2nd of 8
+1926,AL,79,75,6,,Navin Field,711914,8789,4th of 8
+1925,AL,81,73,4,,Navin Field,820766,10659,4th of 8
+1924,AL,86,68,3,,Navin Field,1015136,13015,2nd of 8
+1923,AL,83,71,2,,Navin Field,911377,11836,2nd of 8
+1922,AL,79,75,3,,Navin Field,861206,11184,2nd of 8
+1921,AL,71,82,6,,Navin Field,661527,8591,3rd of 8
+1920,AL,61,93,7,,Navin Field,579650,7431,4th of 8
+1919,AL,80,60,4,,Navin Field,643805,9197,1st of 8
+1918,AL,55,71,7,,Navin Field,203719,3512,4th of 8
+1917,AL,78,75,4,,Navin Field,457289,6017,3rd of 8
+1916,AL,87,67,3,,Navin Field,616772,8010,2nd of 8
+1915,AL,100,54,2,,Navin Field,476105,6183,3rd of 8
+1914,AL,80,73,4,,Navin Field,416225,5336,3rd of 8
+1913,AL,66,87,6,,Navin Field,398502,5243,5th of 8
+1912,AL,69,84,6,,Navin Field,402870,5301,4th of 8
+1911,AL,89,65,2,,Bennett Park,484988,6381,4th of 8
+1910,AL,86,68,3,,Bennett Park,391288,5017,4th of 8
+1909,AL,98,54,1,1,Bennett Park,490490,6288,4th of 8
+1908,AL,90,63,1,1,Bennett Park,436199,5592,5th of 8
+1907,AL,92,58,1,1,Bennett Park,297079,3760,7th of 8
+1906,AL,71,78,6,,Bennett Park,174043,2231,7th of 8
+1905,AL,79,74,3,,Bennett Park & Neil Park II,193384,2545,8th of 8
+1904,AL,62,90,7,,Bennett Park,177796,2251,7th of 8
+1903,AL,65,71,5,,"Bennett Park, Armory Park & Ramona Park",224523,3454,6th of 8
+1902,AL,52,83,7,,Bennett Park & Burns Park,189469,2828,6th of 8
+1901,AL,74,61,3,,Bennett Park & Burns Park,259430,3706,3rd of 8

@@ -1,0 +1,40 @@
+{
+
+	"HTMLFileName":"tigers_final_legend.html",
+	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"symbol_stage":{
+		"element_${_RoundRect}":{
+			"animationEnabled":"false"},
+		"element_${_Text}":{
+			"timelineColor2":"0xcbbd71",
+			"animationEnabled":"false",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"element_${_tiger_legend}":{
+			"usingMotionPaths":"false",
+			"animationEnabled":"false"}},
+	"TransitionIdCounter":"2",
+	"CompZoomFactor":"125",
+	"StageZoomFactor":"100",
+	"pixelsPerMs":"0.2",
+	"viewStartMs":"-25",
+	"usedBOM":"false",
+	"nextElementColorIndex":"2",
+	"stage-Default Timeline_playhead_ms":"0",
+	"colorSwatches":"rgba(232,143,89,1.00)",
+	"viewStartY":"0",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Preloader\": {\
+   \"timelines\": {\
+\
+   }},\
+\"Down-level\": {\
+   \"timelines\": {\
+\
+   }}\
+}"}

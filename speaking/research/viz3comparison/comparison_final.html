@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Academic Writing on Detroit</title>
+	<link rel="stylesheet" href="master_colors.css">
+	<script src="d3.v2.min.js"></script>
+	<script src="barcharts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+
+<body>
+<h2>Similar Subjects in Media and Academic Writing</h2>
+
+<figure id="myChart" style="height:500px" "width=1200px" ></figure>
+
+<script>
+var tt = document.createElement('div')
+leftOffset = -(~~$('html').css('padding-left').replace('px', '') + ~~$('body').css('margin-left').replace('px', '')),
+  topOffset = -32;
+	tt.className = "tooltip"
+	document.body.appendChild(tt);
+var data = {
+	"main": [
+        {
+          "label": "Media Writing on Detroit by Theme",
+          "data": [
+				{
+              "x": "Arab Americans",
+              "y": 227
+            },
+            {
+              "x": "Automobiles",
+              "y": 1620
+            },	
+            {
+              "x": "Black Americans",
+              "y": 1229
+            },
+		    {
+              "x": "Youth",
+              "y": 779
+            },			            
+            {
+              "x": "Cities",
+              "y": 2264
+            },			            
+            {
+              "x": "Community",
+              "y": 352
+            },			            
+            	{
+              "x": "Economic",
+              "y": 442
+            },				            
+            {
+              "x": "Mayors",
+              "y": 1349
+            },
+		    	{
+              "x": "Minority & Ethnic",
+              "y": 317
+            },			            
+          {
+              "x": "Music",
+              "y": 251
+            },
+			{
+              "x": "Politics",
+              "y": 461
+            },
+			{
+              "x": "Women",
+              "y": 354
+            },
+            ],
+        "className": ".media"
+        },
+        
+        {
+          "label": "Academic Writing on Detroit by Theme",
+          "data": [
+				{
+              "x": "Arab Americans",
+              "y": 23
+            },
+            {
+              "x": "Automobiles",
+              "y": 107
+            },	
+            {
+              "x": "Black Americans",
+              "y": 136
+            },
+		    {
+              "x": "Youth",
+              "y": 27
+            },			            
+            {
+              "x": "Cities",
+              "y": 131
+            },			            
+            {
+              "x": "Community",
+              "y": 24
+            },			            
+            	{
+              "x": "Economic",
+              "y": 27
+            },				            
+            {
+              "x": "Mayors",
+              "y": 23
+            },
+		    	{
+              "x": "Minority & Ethnic",
+              "y": 31
+            },			            
+          {
+              "x": "Music",
+              "y": 27
+            },
+			{
+              "x": "Politics",
+              "y": 44
+            },
+			{
+              "x": "Women",
+              "y": 37
+            },
+            ],
+        "className": ".comp.academic"
+        },
+            
+      ],
+      "xScale": "ordinal",
+      "yScale": "linear",
+};
+var opts = {
+"mouseover": function (d, i) {
+	var pos = $(this).offset();
+    $(tt).text(d.x + ': ' + d.y)
+	.css({top: topOffset + pos.top, left: pos.left + leftOffset})
+      .show();
+  },
+  "mouseout": function (x) {
+    $(tt).hide();
+  }
+  };
+var MyChart = new xChart('bar', data, '#myChart', opts);
+</script>
+
+</body>
+</html>

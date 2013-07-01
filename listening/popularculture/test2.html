@@ -1,0 +1,91 @@
+    <!doctype html>
+	<html>
+     <head>
+	 <title>Detroit in Popular Culture</title>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.setOnLoadCallback(init);
+        function init(){
+              var rowData1 = [['Year', 'Action', 'Comedy','Drama', 'Musical',
+                         'Crime', 'Science Fiction'],
+                        ['1910s', 0, 0, 0, 0, 0, 0],
+                        ['1920s', 0, 0, 0, 0, 0, 0],
+                        ['1930s', 0, 1, 0, 0, 0, 0],
+						['1940s', 0, 0, 0, 0, 0, 0],
+						['1950s', 0, 0, 0, 0, 0, 0],
+						['1960s', 0, 1, 1, 0, 0, 0],
+						['1970s', 0, 0, 2, 0, 2, 0],
+						['1980s', 3, 2, 1, 0, 0, 1],
+						['1990s', 1, 7, 5, 0, 3, 2],
+						['2000s', 3, 3, 5, 1, 1, 0],
+						['2010s', 2, 1, 2, 1, 1, 0]];
+            var rowData2 = [['Year', 'Action', 'Comedy', 'Drama', 'Musical',
+                         'Crime', 'Science Fiction'],
+                        ['1910s', 0, 0, 0, 0, 0, 0],
+                        ['1920s', 0, 0, 0, 0, 0, 0],
+                        ['1930s', 0, 0, 0, 0, 0, 0],
+						['1940s', 0, 0, 0, 0, 0, 0],
+						['1950s', 0, 0, 0, 0, 0, 0],
+						['1960s', 0, 0, 0, 0, 0, 0],
+						['1970s', 0, 0, 0, 0, 0, 0],
+						['1980s', 0, 0, 3, 0, 0, 0],
+						['1990s', 0, 7, 0, 0, 0, 2],
+						['2000s', 1, 4, 1, 0, 1, 1],
+						['2010s', 1, 2, 0, 0, 3, 1]];
+			
+            // Create and populate the data tables.
+            var data = [];
+            data[0] = google.visualization.arrayToDataTable(rowData1);
+            data[1] = google.visualization.arrayToDataTable(rowData2);
+			
+            var options = {
+              width: 1100,
+              height: 600,
+			  fontName: "gill sans mt",
+			  colors: ['#f0e116', '#F49AC2', '#7BCDC8', '#3BB878', '#ACD372', '#FBAF5C'],
+			  legend: {position: 'bottom', textStyle: {color: 'black', fontSize: 16}},
+			  bar: { groupWidth: '90%'},
+			  //vAxis: {title: "Number", titleTextStyle: {fontSize: 20}},
+              //hAxis: {title: "Year", titleTextStyle: {fontSize: 20}},
+			  titlePosition: "in",
+			  chartArea:{width:"100%", height:"75%"},
+			  //titleTextStyle: {color: 'black',fontSize: 40}
+			  seriesType: "bars",
+              //series: {5: {type: "line"}},
+              animation:{
+                duration: 1000,
+                easing: 'out'
+              },
+            };
+            var current = 0;
+            // Create and draw the visualization.
+            var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+            var button = document.getElementById('b1');
+            function drawChart() {
+              // Disabling the button while the chart is drawing.
+              button.disabled = true;
+              google.visualization.events.addListener(chart, 'ready',
+                  function() {
+                    button.disabled = false;
+                    button.value = 'Switch genre to ' + (current ? 'Movies' : 'Television');
+                  });
+              options['title'] = (current ? 'Television Series' : 'Movies') + ' Set in Detroit by Genre';
+
+              chart.draw(data[current], options);
+            }
+            drawChart();
+			button.onclick = function() {
+              current = 1 - current;
+              drawChart();
+            }
+        }
+        </script>
+      </head>
+      <body>
+		<input type="button" style="font-family: calibri; height: 30px" type="button" id="b1" onclick="init();" >
+		<div id="chart_div" style="width: 5000px; height: 100;px"></div>
+
+		
+      </body>
+    </html>

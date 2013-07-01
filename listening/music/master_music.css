@@ -1,0 +1,161 @@
+@charset "utf-8";
+#myChart{
+position:absolute;
+top:0;
+bottom:0;
+width:100%
+height:500px;
+}
+p{
+	position:absolute;
+	margin:40px;
+}
+.color4 .line{
+	stroke:#672d8b
+}
+.color4 rect,
+.color4 circle{
+	fill:#672d8b
+}
+.color4 .fill{
+	fill:rgba(103,45,139,0.1)
+}
+.color4.comp .line{
+	stroke:rgba(168,105,206,.3);
+	stroke-width:25px
+}
+.color4.comp rect{
+	fill:#a869ce
+}
+.color4.comp .fill{
+	fill:none
+}
+.color4.comp circle,
+.color4.comp .pointer{
+	fill:rgba(168,105,206,.8)
+}
+.color4.comp.lineshade .fill,
+.color4.comp.lineshadeup .fill{
+	display:block;
+	fill:rgba(103,45,139,0.1)
+}
+.color3 .line{
+	stroke:#c6080d
+}
+.color3 rect,
+.color3 circle{
+	fill:#c6080d
+}
+.color3 .fill{
+	fill:rgba(198,8,13,0.1)
+}
+.color3.comp .line{
+	stroke:rgba(255,255,0,.3);
+	stroke-width:25px
+}
+.color3.comp rect{
+	fill:#f8555a
+}
+.color3.comp .fill{
+	fill:none
+}
+.color3.comp circle,
+.color3.comp .pointer{
+	fill:rgba(247,194,35,.8)
+}
+.color3.comp.lineshade .fill,
+.color3.comp.lineshadeup .fill{
+	display:block;
+	fill:rgba(198,8,13,0.1)
+}
+.color2 .line{
+	stroke:#f26522
+}
+.color2 rect,
+.color2 circle{
+	fill:#f26522
+}
+.color2 .fill{
+	fill:rgba(242,101,34,0.1)
+}
+.color2.comp .line{
+	stroke:rgba(249,185,154,.4);
+	 stroke-width:25px
+}
+.color2.comp rect{
+fill:none
+}
+.color2.comp .fill{
+fill:none
+}
+.color2.comp circle,
+.color2.comp .pointer{
+fill:rgba(249,185,154,.8)
+}
+.color1.comp .line{
+	stroke:rgba(56,128,170,0.3);
+	stroke-width:25px
+}
+.color1.comp circle,
+.color1.comp .pointer{
+fill:rgba(56,128,170,0.8)
+}
+.color0 .line{
+	stroke:rgba(77,169,68,0.3);
+	stroke-width:25px;
+}
+.color0 rect,
+.color0 circle{
+fill:rgba(77,169,68,0.8);
+stroke-width:1px;
+}
+.line{
+stroke-width:3px;
+fill:none
+}
+.circle{
+stroke:#039;
+stroke-width:1px
+}
+.axis .domain{
+fill:none
+}
+.axis .tick{
+stroke:#f1f5f7;
+stroke-width:3px
+}
+.axis text{
+font-family:"Gill Sans MT",Helvetica,Arial,Verdana,sans-serif;
+fill:#000;
+font-size:16px;
+font-weight:bold
+}
+.tooltip{
+position:absolute;
+background:#EEE;
+border-radius:3px;
+text-align:center;
+padding:5px;
+width: 155px;
+box-shadow:0 1px 3px #000;
+border-collapse:separate;
+display: none;
+font-family: "Gill Sans MT";
+font-size: 14px;
+}
+.opts{
+text-align:center;
+list-style:none;
+margin:0;
+line-height:50px
+}
+.opts :first-child{
+text-align:right
+}
+.opts :last-child{
+text-align:left
+}
+.opts .btn{
+width:100%;
+text-align:center
+}
