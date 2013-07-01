@@ -99,12 +99,11 @@
                         cursor: pointer;
                     }
                 .ink-navigation.vspace.home ul{
-                overflow: hidden;
-                display: block;
-                width: 115px;
-                float: left;
-                margin: .5em .5em 0 0;            
-            }
+                    overflow: hidden !important;
+                    display: block !important;
+                    float: left !important;
+                    margin: .5em .5em 0 0;
+                }
             
         </style>
     </head>
@@ -131,13 +130,13 @@
                 
                 <div class="top-menu">
                   
-                  <nav class="ink-navigation vspace home ">
-                <ul class="pills shadowed">
+                  <nav class="ink-navigation vspace home">
+                <ul class="pills large-10 medium-25 small-50">
                     <li><a href="index.html" rel="publisher"><i class="icon-home small"></i></a></li>
                 </ul>
             </nav>
             <nav class="ink-navigation vspace ink-grid">
-                    <ul class="pills shadowed">
+                    <ul class="pills">
                     <li><a href="looking/index.html">looking</a></li>
                     <li><a href="listening/index.html">listening</a></li>
                     <li><a href="speaking/index.html">speaking</a></li>
@@ -153,17 +152,17 @@
                       
                        <!-- put navigation first if using top, left or right positioning -->
                        <ul class="tabs-nav">
-                           <li><a href="#home">Home</a></li>
-                           <li><a href="#news">News</a></li>
-                           <li><a href="#description">Description</a></li>
+                           <li><a href="#looking">Looking</a></li>
+                           <li><a href="#listening">Listening</a></li>
+                           <li><a href="#speaking">Speaking</a></li>
                            <li><a href="#stuff">Stuff</a></li>
                            <li><a href="#more_stuff">More stuff</a></li>
                        </ul>
                       
                        <!-- Put your content second if using top, left or right navigation -->
-                       <div id="home" class="tabs-content"><p>Content</p></div>
-                       <div id="news" class="tabs-content"><p>Content</p></div>
-                       <div id="description" class="tabs-content"><p>Content</p></div>
+                       <div id="looking" class="tabs-content"><p>Content</p></div>
+                       <div id="listening" class="tabs-content"><p>Content</p></div>
+                       <div id="speaking" class="tabs-content"><p>Content</p></div>
                        <div id="stuff" class="tabs-content"><p>Content</p></div>
                        <div id="more_stuff" class="tabs-content"><p>Content</p></div>
                        <!-- If you're using bottom navigation, switch the nav block with the content blocks -->
