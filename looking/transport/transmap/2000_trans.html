@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet Layers Control Example</title>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="leaflet.css" />
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.css' rel='stylesheet' />
+	<!--[if lte IE 8]><link rel="stylesheet" href="../dist/leaflet.ie.css" /><![endif]-->
+
+	<style>
+		#map { position:absolute; top:0; bottom:0; width:100%; }
+		body { margin:0; padding:0; }
+
+		.info {
+			padding: 6px 8px;
+			font: 14px/16px Arial, Helvetica, sans-serif;
+			background: white;
+			background: rgba(255,255,255,0.8);
+			box-shadow: 0 0 15px rgba(0,0,0,0.2);
+			border-radius: 5px;
+		}
+		.info h4 {
+			margin: 0 0 5px;
+			color: #777;
+		}
+
+		.legend {
+			text-align: left;
+			line-height: 18px;
+			color: #555;
+		}
+		.legend i {
+			width: 18px;
+			height: 18px;
+			float: left;
+			margin-right: 8px;
+			opacity: 0.7;
+		}
+	</style>
+</head>
+<body>
+	<div id="map"></div>
+
+	<script src="leaflet.js"></script>
+    <script src='http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.js'></script>
+
+	<script type="text/javascript" src="southEastMI.js"></script>
+    <script type="text/javascript" src="highways.js"></script>
+	<script type="text/javascript">
+
+		var map = L.mapbox.map('map', 'digitaldetroit13msu.map-0bsoph5j');
+
+		// control that shows state info on hover
+		var info = L.control();
+
+		info.onAdd = function (map) {
+			this._div = L.DomUtil.create('div', 'info');
+			this.update();
+			return this._div;
+		};
+
+		info.update = function (props) {
+			this._div.innerHTML = '<h1 style="font-size:56px"><b>2000:</b></h1> <h4>Southeast Michigan Population & Transportation</h4>' +  (props ?
+				'<b>' + props.name + '</b><br />' + props.p2000 + ' people'
+				: 'Hover over a populated place');
+		};
+
+		info.addTo(map); 
+
+
+		// get color depending on population density value
+		function getColor(d) {
+			return d < 500 ?  '#FFEDA0' :
+			       d < 2500  ?  '#FED976':
+			       d < 5000  ?  '#FEB24C':
+			       d < 15000  ?  '#FD8D3C':
+			       d < 25000   ?  '#FC4E2A':
+			       d < 50000   ?  '#E31A1C' :
+			       d > 100000   ? '#BD0026' :
+			                 '#800026' ;
+		}
+
+		function style(feature) {
+			return {
+				weight: 1,
+				opacity: 1,
+				color: 'white',
+				fillOpacity: 0.7,
+				fillColor: getColor(feature.properties.p2000)
+			};
+		}
+
+		function highlightFeature(e) {
+			var layer = e.target;
+
+			layer.setStyle({
+				weight: 2,
+				color: '#666',
+				dashArray: '',
+				fillOpacity: 0.7
+			});
+
+			if (!L.Browser.ie && !L.Browser.opera) {
+				layer.bringToFront();
+			}
+
+			info.update(layer.feature.properties);
+		}
+
+		var geojson;
+
+		function resetHighlight(e) {
+			geojson.resetStyle(e.target);
+			info.update();
+		}
+
+		function zoomToFeature(e) {
+			map.fitBounds(e.target.getBounds());
+		}
+
+		function onEachFeature(feature, layer) {
+			layer.on({
+				mouseover: highlightFeature,
+				mouseout: resetHighlight,
+			});
+		}
+		
+		var roadStyle = {
+			"color": "#000",
+			"weight": 6,
+			"opacity": .8,
+};
+
+		geojson = L.geoJson(southeast, {
+			style: style,
+			onEachFeature: onEachFeature
+		}).addTo(map);
+		
+		L.geoJson(highways, {
+			style: roadStyle,
+		}).addTo(map);
+
+		map.attributionControl.addAttribution('Population data &copy; <a href="http://library.semcog.org/InmagicGenie/DocumentFolder/HistoricalPopulationSEMI.pdf">SEMCOG</a>');
+
+
+		var legend = L.control({position: 'bottomright'});
+
+		legend.onAdd = function (map) {
+
+			var div = L.DomUtil.create('div', 'info legend'),
+				grades = [0, 500, 2500, 5000, 15000, 25000, 50000, 100000],
+				labels = [],
+				from, to;
+
+			for (var i = 0; i < grades.length; i++) {
+				from = grades[i];
+				to = grades[i + 1];
+
+				labels.push(
+					'<i style="background:' + getColor(from + 1) + '"></i> ' +
+					from + (to ? '&ndash;' + to : '+'));
+			}
+
+			div.innerHTML = labels.join('<br>');
+			return div;
+		};
+
+		legend.addTo(map);
+
+	</script>
+
+</body>
+</html>
+
