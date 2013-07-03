@@ -22,10 +22,10 @@ var symbols = {
    content: {
          dom: [
          {
-            id:'legend_commdev3',
+            id:'legend_commdev4',
             type:'image',
-            rect:['10%','20px','25%','355px','auto','auto'],
-            fill:["rgba(0,0,0,0)",im+"legend_commdev3.png",'0px','0px']
+            rect:['11.6%','21px','20%','330px','auto','auto'],
+            fill:["rgba(0,0,0,0)",im+"legend_commdev4.png",'0px','0px']
          }],
          symbolInstances: [
 
@@ -33,10 +33,11 @@ var symbols = {
       },
    states: {
       "Base State": {
-         "${_legend_commdev3}": [
-            ["style", "top", '20px'],
-            ["style", "left", '10%'],
-            ["style", "width", '25%']
+         "${_legend_commdev4}": [
+            ["style", "top", '21px'],
+            ["style", "height", '330px'],
+            ["style", "left", '11.62%'],
+            ["style", "width", '20%']
          ]
       }
    },

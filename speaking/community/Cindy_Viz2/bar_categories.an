@@ -1,0 +1,26 @@
+{
+
+	"HTMLFileName":"bar_categories.html",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Preloader\": {\
+   \"timelines\": {\
+\
+   }},\
+\"Down-level\": {\
+   \"timelines\": {\
+\
+   }}\
+}",
+	"usedBOM":"false",
+	"symbol_stage":{
+		"element_${_legend_commdev3}":{
+			"animationEnabled":"false"}},
+	"stage-Default Timeline_playhead_ms":"0",
+	"CompZoomFactor":"100",
+	"StageZoomFactor":"100",
+	"viewStartY":"0"}

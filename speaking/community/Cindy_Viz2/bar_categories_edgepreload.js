@@ -53,7 +53,7 @@ if(document.addEventListener ){
     { load: "edge_includes/jquery-1.7.1.min.js"},
     { load: "edge_includes/edge.2.0.0.min.js"},
           { load: "bar_categories_edge.js"},
-          { load: "bar_categories_edgeactions.js"}];
+          { load: "bar_categories_edgeActions.js"}];
 
 if (AdobeEdge.bootstrapLoading) { signaledLoading = true; AdobeEdge.loadResources=doLoadResources; AdobeEdge.playWhenReady=playWhenReady; }
 
